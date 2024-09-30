@@ -1,0 +1,21 @@
+<div class="ar-container">
+    <h1>Experimente seu novo visual agora!</h1>
+    <div class="video-wrapper">
+      <video #videoElement autoplay muted></video>
+      <canvas #canvasElement></canvas>
+    </div>
+    <div class="cta-button">
+      <button (click)="capturePhoto()">Ver Antes e Depois</button>
+    </div>
+    <div class="comparison-wrapper" *ngIf="photoCaptured">
+      <div class="before">
+        <h2>Antes</h2>
+        <img [src]="beforeImage" alt="Antes">
+      </div>
+      <div class="after">
+        <h2>Depois</h2>
+        <img [src]="afterImage" alt="Depois">
+      </div>
+    </div>
+  </div>
+  
