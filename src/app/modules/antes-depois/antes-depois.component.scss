@@ -2,16 +2,17 @@
   text-align: center;
   background-color: pink;
   width: 100%;
+  padding: 30px 0;
 }
 
 .antes-depois-container h2 {
   font-size: 30px;
   font-weight: bold;
-  line-height: 3;
+  line-height: 1.5; /* Ajuste o line-height para maior responsividade */
   color: #f7007c;
   text-align: left;
   margin-bottom: 20px;
-  margin-left: 100px;
+  margin-left: 5%; /* Ajuste a margem para maior responsividade */
 }
 
 .carousel-container {
@@ -31,7 +32,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-80%);
   }
 }
 
@@ -43,7 +44,6 @@
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 30px;
   height: 350px;
 }
 
@@ -54,13 +54,42 @@
 
 .imagens {
   display: flex;
-  justify-content: space-between;
   justify-content: center;
   padding-top: 35px;
+  flex-wrap: wrap;
+}
+
+.imagem {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
 }
 
 .imagem img {
-  max-width: 95%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .antes-depois-container h2 {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .quadrado {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .antes-depois-container h2 {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .quadrado {
+    flex: 0 0 80%;
+    height: auto;
+  }
 }

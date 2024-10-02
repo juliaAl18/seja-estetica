@@ -36,3 +36,41 @@ h2 {
 .close-button:hover {
   background-color: #f7007c;
 }
+
+@media (max-width: 768px) {
+  .modal-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    font-size: 20px;
+  }
+
+  .close-button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content {
+    font-size: 18px;
+  }
+
+  .close-button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}

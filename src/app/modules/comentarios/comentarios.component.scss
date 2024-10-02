@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 20px;
 }
+
 .teste {
   background-color: #ffc0cb;
   border-radius: 8px;
@@ -96,4 +97,60 @@ h2 {
 
 .seta mat-icon {
   font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .usuario-info {
+    font-size: 18px;
+  }
+
+  .comentario-texto {
+    font-size: 16px;
+  }
+
+  .seta {
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comentarios-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .usuario-info {
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto-usuario {
+    width: 40px;
+    height: 40px;
+  }
+
+  .comentario-texto {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .seta {
+    min-width: 30px;
+    padding: 5px;
+  }
 }

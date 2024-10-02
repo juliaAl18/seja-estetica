@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .texto-container {
@@ -39,4 +40,50 @@ p {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ffc0cb;
+}
+
+@media (max-width: 768px) {
+  .texto-container {
+    padding-left: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .foto {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quem-somos-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .texto-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .foto {
+    width: 250px;
+    height: 250px;
+  }
 }

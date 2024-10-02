@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./painel.component.scss']
 })
 export class PainelComponent {
+  
 
 }

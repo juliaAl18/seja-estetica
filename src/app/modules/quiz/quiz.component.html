@@ -1,0 +1,17 @@
+<div class="quiz-container">
+    <h2>Quiz da Estética</h2>
+    <form>
+        <div class="question-container" *ngIf="!quizFinished">
+            <label class="question-label">{{ questions[currentQuestionIndex].question }}</label>
+            <div class="options-container">
+                <div *ngFor="let option of questions[currentQuestionIndex].options" class="option">
+                    <input type="radio" [value]="option" [(ngModel)]="questions[currentQuestionIndex].answer"
+                        name="question{{ currentQuestionIndex }}" class="option-input" />
+                    <span class="option-text">{{ option }}</span>
+                </div>
+            </div>
+            <button type="button" (click)="nextQuestion2()" class="submit-button">Próxima Pergunta</button>
+        </div>
+        <button type="button" (click)="generatePDF()" class="submit-button" *ngIf="quizFinished">Gerar PDF</button>
+    </form>
+</div>

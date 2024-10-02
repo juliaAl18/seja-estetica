@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TesteComponent } from './modules/teste/teste.component';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { HomeComponent } from './modules/home/home.component';
 import { PainelComponent } from './modules/painel/painel.component';
@@ -15,12 +14,14 @@ import { QuemSomosComponent } from './modules/quem-somos/quem-somos.component';
 import { ComentariosComponent } from './modules/comentarios/comentarios.component';
 import { AntesDepoisComponent } from './modules/antes-depois/antes-depois.component';
 import { ExperimenteComponent } from './modules/experimente/experimente.component';
+import { QuizComponent } from './modules/quiz/quiz.component';
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './modules/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TesteComponent,
     HomeComponent,
     PainelComponent,
     DuvidasComponent,
@@ -28,14 +29,17 @@ import { ExperimenteComponent } from './modules/experimente/experimente.componen
     QuemSomosComponent,
     ComentariosComponent,
     AntesDepoisComponent,
-    ExperimenteComponent
+    ExperimenteComponent,
+    QuizComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
