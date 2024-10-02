@@ -1,0 +1,19 @@
+<div class="antes-depois-container">
+  <h2>Antes e Depois</h2>
+  <div class="carousel-container" 
+       (mouseenter)="pauseCarousel()" 
+       (mouseleave)="resumeCarousel()">
+    <div class="carousel" [ngStyle]="{'animation-play-state': isPaused ? 'paused' : 'running'}">
+      <div class="quadrado" *ngFor="let item of items">
+        <div class="imagens">
+          <div class="imagem">
+            <img [src]="item.beforeImg" alt="Antes">
+          </div>
+          <div class="imagem">
+            <img [src]="item.afterImg" alt="Depois">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

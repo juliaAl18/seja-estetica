@@ -1,0 +1,33 @@
+<div class="comentarios-container">
+    <h2>Por quê escolher <span class="jus-beauty">Jus Beauty?</span></h2>
+
+    <div class="teste">
+        <div *ngIf="comentarioAtual" class="comentario">
+            <div class="usuario-info">
+                <img [src]="comentarioAtual.foto" alt="Foto do Usuário" class="foto-usuario" />
+                <div class="usuario">
+                    <span class="usuario-nome">@ {{ comentarioAtual.nome }}</span>
+                </div>
+            </div>
+            <p class="comentario-texto">{{ comentarioAtual.texto }}</p>
+            <div class="estrelas">
+                <ng-container *ngFor="let estrela of [].constructor(comentarioAtual.estrelas); let i = index">
+                    <mat-icon *ngIf="i < comentarioAtual.estrelas">star</mat-icon>
+                    <mat-icon *ngIf="i >= comentarioAtual.estrelas">star_border</mat-icon>
+                </ng-container>
+            </div>
+            <div class="barra-colorida"></div>
+        </div>
+    </div>
+    
+  
+    <div class="navegacao">
+      <button mat-button (click)="anteriorComentario()" class="seta">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <button mat-button (click)="proximoComentario()" class="seta">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+  

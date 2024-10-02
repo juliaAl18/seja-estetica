@@ -1,0 +1,75 @@
+.duda-facial {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #daa520;
+  font-weight: bold;
+}
+
+.procedimentos {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.quadrado {
+  background-color: #ffc0cb;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  justify-content: center;
+  color: #f9f9f9;
+}
+
+.quadrado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Questrial", sans-serif;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: "Bree Serif", serif;
+  line-height: 1.4;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #f7007c;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.seta {
+  margin-left: 5px;
+  font-size: 28px;
+}

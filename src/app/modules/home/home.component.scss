@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Avallon+Alt:wght@400;700&display=swap");
+
+.teste {
+  background: linear-gradient(to right, #daa520, #ffd700, #daa520);
+  width: 100%;
+  height: 30px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url("https://img.freepik.com/fotos-premium/mulher-de-injecao-e-labios-em-estudio-para-processo-de-beleza-de-cirurgia-plastica-e-preenchimento-estetico-em-fundo-branco-closeup-boca-e-agulha-do-cirurgiao-para-mudanca-facial-cuidados-com-a-pele-e-cosmeticos-prp_590464-228611.jpg"); /* Imagem de fundo */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 2;
+}
+
+.title {
+  font-size: 120px;
+  font-weight: bold;
+  font-family: "Great Vibes", cursive;
+}
+
+.description {
+  font-size: 40px;
+  margin: -20px 0;
+  position: relative;
+  top: -80px;
+  font-family: "Six Hands Condensed";
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #25d366;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 24px;
+  transition: background-color 0.3s;
+  font-family: "Bree Serif", serif;
+  border-radius: 40px;
+}
+
+.whatsapp-button img {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .whatsapp-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .whatsapp-button img {
+    width: 20px;
+    height: 20px;
+  }
+}

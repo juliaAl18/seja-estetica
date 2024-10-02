@@ -1,0 +1,99 @@
+.comentarios-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.teste {
+  background-color: #ffc0cb;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #daa520;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 4;
+}
+
+.jus-beauty {
+  color: #ffc0cb;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 40px;
+  padding: 1px 20px;
+}
+
+.comentario {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.foto-usuario {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.usuario {
+  font-weight: bold;
+  color: #555;
+}
+
+.comentario-texto {
+  margin: 10px 0;
+  color: #555;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+}
+
+.estrelas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-icon {
+  color: #ffb400;
+  font-size: 28px;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.seta {
+  min-width: 50px;
+  padding: 10px;
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.seta mat-icon {
+  font-size: 30px;
+}

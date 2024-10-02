@@ -1,0 +1,42 @@
+.quem-somos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.texto-container {
+  flex: 1;
+  max-width: 700px;
+  padding-left: 200px;
+}
+
+h1 {
+  font-family: "Questrial", sans-serif;
+  color: #daa520;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.foto-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.foto {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffc0cb;
+}

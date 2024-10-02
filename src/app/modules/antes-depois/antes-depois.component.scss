@@ -1,0 +1,66 @@
+.antes-depois-container {
+  text-align: center;
+  background-color: pink;
+  width: 100%;
+}
+
+.antes-depois-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 3;
+  color: #f7007c;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 20s linear infinite;
+  gap: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.quadrado {
+  flex: 0 0 30%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30px;
+  height: 350px;
+}
+
+.quadrado:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imagens {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  padding-top: 35px;
+}
+
+.imagem img {
+  max-width: 95%;
+  height: auto;
+  border-radius: 8px;
+}
